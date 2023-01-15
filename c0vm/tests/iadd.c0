@@ -1,0 +1,87 @@
+/**************************************************************************/
+/*              COPYRIGHT Carnegie Mellon University 2022                 */
+/* Do not post this file or any derivative on a public site or repository */
+/**************************************************************************/
+// #use <conio>  
+  
+// int factorial(int n) {  
+//   return n == 0 ? 1 : n * factorial(n-1);  
+// }  
+// int main () {  
+//   printint(factorial(9));  
+//   println(" is the factorial of 9(should be 362880!!!)");  
+//   return 0;  
+// }  
+
+// #use <conio>
+// #use <string>
+
+// typedef struct inner_header inner;
+// struct inner_header {
+//   int a;
+//   char b;
+// };
+
+// typedef struct array_header array;
+// struct array_header {
+//   int a;
+//   char b;
+//   array *next;
+//   int[] c;
+//   string[] d;
+//   inner *new;
+// };
+
+// int pow(int a, int b)
+// //@requires b >= 0;
+// //@ensures \result >= 0;
+// {
+// if (b == 1) return b;
+//   return b * pow(a, b-1);
+// }
+
+// string add(char a, char b) {
+//   return string_join(string_fromchar(a), string_fromchar(b));
+// }
+
+
+// int main() {
+//   array *arr = alloc(array);
+//   arr->a = 5;
+//   arr->b = 'a';
+//   arr->c = alloc_array(int, 5);
+//   arr->c[0] = 4;
+//   arr->c[1] = 3;
+//   printint(arr->a);
+//   printchar(arr->b);
+//   printint(arr->c[0]);
+//   arr->next = alloc(array);
+//   arr->next->a = pow(arr->c[0], arr->a);
+//   arr->next->b = 'b';
+//   printint(arr->next->a);
+//   printchar(arr->next->b);
+//   arr->next->d = alloc_array(string, 12);
+//   arr->next->d[10] = add(arr->b, arr->next->b);
+//   print(arr->next->d[10]);
+//   arr->next->new = alloc(inner);
+//   arr->next->new->a = pow(arr->next->a, arr->c[0]);
+//   arr->next->new->b = arr->next->b;
+//   printint(arr->next->new->a);
+//   printchar(arr->next->new->b);
+//   arr->next->next = alloc(array);
+
+//   return 0;
+// }
+#use <conio>
+
+int main() {
+  int[] A = alloc_array(int, 5);
+  A[1] = 5;
+  A[4] = 7;
+  A[3] = 2;
+  printint(A[3]);
+  print("\n");
+  printf("%d\n", A[4]);
+  return 0;
+}
+
